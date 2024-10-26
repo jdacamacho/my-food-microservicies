@@ -1,4 +1,4 @@
-package com.unicauca.my_food_order.infrastructure.exceptionHandler;
+package com.unicauca.my_food_order.infrastructure.output.exceptionHandler;
 
 import java.util.Locale;
 
@@ -7,14 +7,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.exceptionStructure.ErrorCode;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.exceptionStructure.ErrorUtils;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.BusinessRuleException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.NoDataException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectExistsException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectNotFoundException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectNullException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.exceptionStructure.Error;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.exceptionStructure.Error;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.exceptionStructure.ErrorCode;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.exceptionStructure.ErrorUtils;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.BusinessRuleException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.NoDataException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectExistsException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectNotFoundException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectNullException;
+
 import jakarta.servlet.http.HttpServletRequest;
 
 @ControllerAdvice

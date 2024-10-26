@@ -1,4 +1,4 @@
-package com.unicauca.my_food_order.infrastructure.exceptionHandler.exceptionStructure;
+package com.unicauca.my_food_order.infrastructure.output.exceptionHandler.exceptionStructure;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

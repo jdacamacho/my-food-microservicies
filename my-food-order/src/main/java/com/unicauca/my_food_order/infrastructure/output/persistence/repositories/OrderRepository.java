@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.unicauca.my_food_order.infrastructure.output.persistence.entities.OrderEntity;
 
 @Repository
-public interface OrderMySqlRepository extends JpaRepository<OrderEntity, String>{
+public interface OrderRepository extends JpaRepository<OrderEntity, String>{
     
 }

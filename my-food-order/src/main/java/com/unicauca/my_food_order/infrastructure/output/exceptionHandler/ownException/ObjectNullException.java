@@ -1,6 +1,7 @@
-package com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException;
+package com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException;
 
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.exceptionStructure.ErrorCode;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.exceptionStructure.ErrorCode;
+
 import lombok.Getter;
 
 @Getter

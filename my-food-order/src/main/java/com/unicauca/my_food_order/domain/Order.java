@@ -7,8 +7,8 @@ import com.unicauca.my_food_order.domain.value_objects.Dish;
 import com.unicauca.my_food_order.domain.value_objects.OrderDate;
 import com.unicauca.my_food_order.domain.value_objects.OrderState;
 import com.unicauca.my_food_order.domain.value_objects.TotalPrice;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectNotFoundException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectNullException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectNotFoundException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectNullException;
 
 import lombok.Getter;
 import lombok.Setter;

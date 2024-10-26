@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectNotFoundException;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.ObjectNullException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectNotFoundException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.ObjectNullException;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,8 @@
 package com.unicauca.my_food_order.domain.value_objects;
 
 import com.unicauca.my_food_order.domain.constants.OrderStateConstants;
-import com.unicauca.my_food_order.infrastructure.exceptionHandler.ownException.BusinessRuleException;
+import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.BusinessRuleException;
+
 import lombok.Getter;
 import lombok.Setter;
 
