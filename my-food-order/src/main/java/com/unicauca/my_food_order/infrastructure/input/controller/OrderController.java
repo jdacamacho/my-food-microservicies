@@ -52,7 +52,7 @@ public class OrderController {
             this.mapper.mapModelToResponse(order), HttpStatus.CREATED);
     }
 
-    @PatchMapping("dishes/{idOrder}")
+    @PatchMapping("/dishes/{idOrder}")
     public ResponseEntity<OrderDTOResponse> addDishToOrder(@PathVariable String idOrder, 
                                                 @RequestParam String dishName, 
                                                 @RequestParam double dishValue){
@@ -61,7 +61,7 @@ public class OrderController {
             this.mapper.mapModelToResponse(order), HttpStatus.OK);
     }
 
-    @DeleteMapping("dishes/{idOrder}/{idDish}")
+    @DeleteMapping("/dishes/{idOrder}/{idDish}")
     public ResponseEntity<OrderDTOResponse> removeDishToOrder(@PathVariable String idOrder, 
                                                 @PathVariable String idDish){
         Order order = this.orderUC.removeDish(idOrder, idDish);
