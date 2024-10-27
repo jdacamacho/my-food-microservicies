@@ -1,5 +1,6 @@
 package com.unicauca.my_food_order.domain.value_objects;
 
+import com.unicauca.my_food_order.domain.Order;
 import com.unicauca.my_food_order.domain.constants.OrderStateConstants;
 import com.unicauca.my_food_order.infrastructure.output.exceptionHandler.ownException.BusinessRuleException;
 
@@ -11,6 +12,7 @@ import lombok.Setter;
 public class OrderState {
     private String id_state;
     private String state;
+    private Order objOrder;
 
     public OrderState(){}
     

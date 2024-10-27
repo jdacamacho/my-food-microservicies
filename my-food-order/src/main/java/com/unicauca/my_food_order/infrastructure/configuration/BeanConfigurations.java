@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.unicauca.my_food_order.application.output.ExceptionFormatterIntPort;
 import com.unicauca.my_food_order.application.output.ManageOrderGatewayIntPort;
 import com.unicauca.my_food_order.domain.services.OrderDomainService;
-import com.unicauca.my_food_order.domain.useCases.ManageOrderCUImplAdapter;
+import com.unicauca.my_food_order.domain.useCases.ManageOrderUCImplAdapter;
 import com.unicauca.my_food_order.infrastructure.input.ErrorCatcher;
 
 @Configuration
@@ -18,10 +18,10 @@ public class BeanConfigurations {
     }
     
     @Bean
-    public ManageOrderCUImplAdapter createOrderCU(OrderDomainService domainService,
+    public ManageOrderUCImplAdapter createOrderCU(OrderDomainService domainService,
                                                 ManageOrderGatewayIntPort gateway,
                                                 ExceptionFormatterIntPort formatter){
-        return new ManageOrderCUImplAdapter(domainService, gateway, formatter);
+        return new ManageOrderUCImplAdapter(domainService, gateway, formatter);
     }
 
     @Bean

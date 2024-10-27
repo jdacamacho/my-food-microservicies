@@ -1,6 +1,9 @@
 package com.unicauca.my_food_order.infrastructure.output.persistence.gateway;
 
+import java.util.List;
+
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.stereotype.Service;
 
 import com.unicauca.my_food_order.application.output.ManageOrderGatewayIntPort;
@@ -8,15 +11,13 @@ import com.unicauca.my_food_order.domain.Order;
 import com.unicauca.my_food_order.infrastructure.output.persistence.entities.OrderEntity;
 import com.unicauca.my_food_order.infrastructure.output.persistence.repositories.OrderRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class ManageOrderGatewayImplAdapter implements ManageOrderGatewayIntPort {
     private final OrderRepository bd;
     private final ModelMapper mapper;
-
-    public ManageOrderGatewayImplAdapter(OrderRepository bd, ModelMapper mapper){
-        this.bd = bd;
-        this.mapper = mapper;
-    }
 
     @Override
     public Order save(Order order) {
@@ -38,5 +39,11 @@ public class ManageOrderGatewayImplAdapter implements ManageOrderGatewayIntPort 
         return this.bd.existsById(idOrder);
     }
 
+    @Override
+    public List<Order> findAll() {
+        List<OrderEntity> orders = this.bd.findAll();
+        List<Order> response = this.mapper.map(orders, new TypeToken<List<Order>>(){}.getType());
+        return response;
+    }
 
 }

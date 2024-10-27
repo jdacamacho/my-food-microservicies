@@ -3,6 +3,9 @@ package com.unicauca.my_food_order.domain.value_objects;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+
+import com.unicauca.my_food_order.domain.Order;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +15,7 @@ public class OrderDate {
     private String id_date;
     private String date;
     private String hour;
+    private Order objOrder;
 
     public OrderDate(){
         createOrderDate();
