@@ -1,3 +1,6 @@
 [submodule "inventory"]
 	path = inventory
 	url = https://github.com/SBenitezL/inventory
+[submodule "Menu"]
+	path = Menu
+	url = https://github.com/CamiloBonilla1226/Menu
