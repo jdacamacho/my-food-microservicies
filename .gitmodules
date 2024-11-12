@@ -13,3 +13,6 @@
 [submodule "myfood-configuration"]
 	path = myfood-configuration
 	url = https://github.com/SBenitezL/myfood-configuration
+[submodule "waste"]
+	path = waste
+	url = https://github.com/simonguzman/waste
