@@ -4,3 +4,12 @@
 [submodule "Menu"]
 	path = Menu
 	url = https://github.com/CamiloBonilla1226/Menu
+[submodule "my-food-configuration-server"]
+	path = my-food-configuration-server
+	url = https://github.com/SBenitezL/my-food-configuration-server
+[submodule "my-food-api-gateway"]
+	path = my-food-api-gateway
+	url = https://github.com/SBenitezL/my-food-api-gateway
+[submodule "myfood-configuration"]
+	path = myfood-configuration
+	url = https://github.com/SBenitezL/myfood-configuration
